@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+.nav{
+    overflow: auto;
+    width: 85%;
+    margin: 1em auto;
+}
+.nav h1{
+    text-transform: uppercase;
+    width: 50%;
+    float: left;
+}
+.nav h1 a{
+    font-family: 'Oswald', sans-serif;
+    color: #96746b;
+    text-decoration: none;
+}
+.nav ul{
+    width: 50%;
+    float: left;
+    text-align: right;
+    margin-top: 1em;
+}
+.nav ul li{
+    display: inline-block;
+    margin-left: 1em;
+}
+.nav ul a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #312a26;
+    text-decoration: none;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url(../image/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 670px;
+}
+.banner-text{
+/* 
+position;
+color
+top
+left
+*/
+    position: relative;
+    color: #c7a17a;
+    top: 50%;
+    left: 5.5%;
+    transform: translate(0%,-50%);
+}
+.banner-text h2{
+    /* 
+    font-size
+    color
+    text-transfor
+    */
+    /* font-size: 70px; */
+    font-size: 4em;
+    color: #c7a17a;
+    text-transform: uppercase;
+}
+.banner-text h2 span{
+    /* color */
+    color: #96746b;
+}
+
+.banner-text p{
+    /* color */
+    color: #fff;
+}
+
+.banner a{
+/* 
+text-decoration
+padding
+backcolor
+color
+font family
+font-weight
+margin-to
+*/
+    display: inline-block;
+    text-decoration: none;
+    /* padding: 15px; */
+    padding: 1em;
+    background-color: #312a26;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    /* margin-top: 15px; */
+    margin-top: 1em;
+}
+
+/* Ads Section */
+.ads{
+/* 
+width:display: 
+margin:
+overflow:
+*/
+    width: 85%;
+    margin: 4em auto;
+    overflow: hidden;
+}
+.ads-items{
+/* 
+width
+float
+height
+backgroundsize
+backgrundposition
+position
+margin-bottom
+*/
+    width: 48.5%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 3%;
+}
+.ads-item1{
+    /* background image */
+    margin-right: 3%;
+    background-image: url(../image/ads-img1.jpg);
+}
+.ads-item2{
+    /* background image */
+    background-image: url(../image/ads-img2.jpg);
+}
+.ads-text{
+    /* 
+    position
+    top
+    left
+    width
+     */
+    position: relative;
+    top: 25%;
+    left: 10%;
+    transform: translateY(-50);
+}
+.ads-text h3{
+    /* 
+    transform
+    font size
+    color
+    lineheight
+    text shadow
+     */
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+.ads-text a{
+    /* 
+    fontfamily
+    font weight
+    color
+    texttransform
+    margintop
+    text shadow
+     */
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+/* Merchandise Sales Section */
+.merch{
+   width:85%;
+   margin:4em auto;
+}
+.section-header{
+    text-align: center;
+}
+.section-header span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color:#c7a17a
+}
+.section-header h2{
+    text-transform: uppercase;
+    color: #312a26;
+}
+.section-header hr{
+    background-color: #c7a17a;
+    height:2px;
+    width:25%;
+    margin:auto;
+}
+/* Merch Gallery */
+.merch-gallery{
+    margin-top: 2em;
+    overflow:auto;
+}
+.merch-items{
+    width:24.25%;
+    float:left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+.merch-items:nth-child(4),
+.merch-items:nth-child(8){
+    margin-right: 0;
+}
+.merch-items img{
+    width:100%;
+    height:350px;
+    object-fit: cover;
+}
+
+/* Discount Area */
+.discount{
+    background-image: url(../image/discount-img.jpg);
+    width:85%;
+    height:350px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 4em auto;
+}
+.discount-text{
+    /* border:2px solid red; */
+    /* 
+    textalign
+    width
+    position:absolute
+    top
+    left
+    */
+    transform:translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+}
+.discount-text span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color:#fff
+}
+.discount-text h2{
+    /* border:2px solid blueviolet; */
+    /* 
+    fontize
+    color
+    texttransform
+    textshadow
+    */
+    font-size:  2em;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px #312a26;
+}
+.discount-text a{
+    /* 
+    textdecoration
+    display; inline block
+    padding
+    backgroundcolor
+    fontfamily
+    fontweight
+    margintop
+    */
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+    color: #000;
+}
+
+/* Reservation Area */
+.reservation{
+	/*
+	width
+	margin
+	*/
+	width: 85%;
+	margin: 4em auto;
+}
+form{
+	/* 
+	overflow
+	*/
+	overflow: auto;
+}
+.form-group{
+	/*
+	margintop
+	backgroundcolor
+	float
+	width
+	borderradius
+	padding
+	height
+	*/
+	margin-top: 2em;
+	background-color: #f2f2f2;
+	float: left;
+	width: 49.5%;
+	border-radius: 5px;
+	padding: 2em;
+	height: 650px;
+}
+.form-group:nth-child(1){
+	/* marginright */
+	margin-right: 1%;
+}
+form input,
+form label,
+form select,
+form textarea{
+	/* 
+	display
+	width
+	fontfamily
+	padding
+	margin-bottom
+	*/
+	display: inline-block;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+form label{
+	/*
+	fontweight
+	padding
+	marginbottom
+	*/
+	font-weight: 700;
+	padding: 0;
+	margin-bottom: .5em;
+}
+.rest-time{
+	/*
+	textalign
+	*/
+	text-align: center;
+}
+.rest-time *{
+	/*
+	width
+	*/
+	width: auto;
+}
+form p{
+	/*
+	margin
+	textalign
+	fontweight
+	*/
+	margin: 1em;
+	text-align: center;
+	font-weight: 700;
+}
+form h3{
+	text-transform: uppercase;
+	text-align: center;
+}
+form h3::after {
+	content: "";
+	background-image: url(../image/reservation-cards.png);
+	background-size: contain;
+	display: block;
+	width: 150px;
+	height: 30px;
+	margin: auto;
+}
+.res-agreement *{
+	width: auto;
+}
+form input[type="submit"]{
+	background-color: #c7a17a;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* Footer Section */
+.footer{
+    background-image: url(../image/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 2em; 
+}
+.footer-contents{
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+}
+.footer-widehgts{
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+}
+.footer-widehgts:nth-child(4){
+    margin-right: 0;
+}
+.footer-widehgts h3{
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.footer-widehgts h4{
+    color: #fff;
+}
+.footer-widehgts p{
+    color: #c7a17a;
+}
+.footer td, th{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 6px #312a26;
+}
+.footer-form *{
+    width: auto;
+}
+
+.footer-social{
+    background-color: #312a26;
+    padding: .5em;
+}
+.social-widget {
+    display: inline-block;
+    width: 33%;
+    color: #fff;
+    text-align: center;
+}
+.social-widget h3{
+    text-transform: uppercase;
+}
+.social-widget a{   
+    text-decoration: none;
+}
